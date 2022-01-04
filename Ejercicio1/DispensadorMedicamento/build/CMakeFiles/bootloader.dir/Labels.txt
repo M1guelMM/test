@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/CMakeFiles/bootloader
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/CMakeFiles/bootloader.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/CMakeFiles/bootloader-complete.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/miki_/Desktop/EjerciciosFreeRTOS/Ejercicio1/DispensadorMedicamento/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

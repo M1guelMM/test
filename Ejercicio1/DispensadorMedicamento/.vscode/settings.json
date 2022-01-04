@@ -60,5 +60,6 @@
     "*.mdx": "tdx",
     "stdio.h": "c"
   },
-  "idf.portWin": "COM4"
+  "idf.portWin": "COM4",
+  "idf.adapterTargetName": "esp32"
 }

@@ -58,9 +58,6 @@
   "files.associations": {
     "*.md": "markdown",
     "*.mdx": "tdx",
-    "stdio.h": "c",
-    "freertos.h": "c",
-    "freertosconfig.h": "c"
-  },
-  "idf.adapterTargetName": "esp32"
+    "stdio.h": "c"
+  }
 }

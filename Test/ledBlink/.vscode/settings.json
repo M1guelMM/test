@@ -7,7 +7,7 @@
   "terminal.integrated.profiles.windows": {
     "idf": {
       "path": "${env:windir}/System32/cmd.exe",
-      "args": ["/k", "c:/esp/esp-idf/export.bat"],
+      "args": ["/k", "C:/esp/esp-idf/export.bat"],
       
       "env": {
         "IDF_PYTHON_ENV_PATH" : "C:/esp/tools/.espressif/tools/idf-python/3.8.7/Scripts"
@@ -18,7 +18,7 @@
   "terminal.integrated.profiles.linux": {
     "idf": {
       "path": "/bin/bash",
-      "args":["--init-file", "c:/esp/esp-idf/export.sh", "-i"],
+      "args":["--init-file", "C:/esp/esp-idf/export.sh", "-i"],
       
         "env": {
           "IDF_PYTHON_ENV_PATH" : "C:/esp/tools/.espressif/tools/idf-python/3.8.7/Scripts"
@@ -29,7 +29,7 @@
   "terminal.integrated.profiles.osx": {
     "idf": {
       "path": "/bin/bash",
-      "args": ["--init-file", "c:/esp/esp-idf/export.sh", "-i"],
+      "args": ["--init-file", "C:/esp/esp-idf/export.sh", "-i"],
       
         "env": {
           "IDF_PYTHON_ENV_PATH" : "C:/esp/tools/.espressif/tools/idf-python/3.8.7/Scripts"
@@ -50,17 +50,18 @@
     "IDF_PYTHON_ENV_PATH" : "C:/esp/tools/.espressif/tools/idf-python/3.8.7/Scripts"
   },
   
-  "terminal.integrated.shellArgs.windows": ["/k", "c:/esp/esp-idf/export.bat"],
+  "terminal.integrated.shellArgs.windows": ["/k", "C:/esp/esp-idf/export.bat"],
   "terminal.integrated.shell.linux": "/bin/bash",
-  "terminal.integrated.shellArgs.linux": ["--init-file", "c:/esp/esp-idf/export.sh", "-i"],
+  "terminal.integrated.shellArgs.linux": ["--init-file", "C:/esp/esp-idf/export.sh", "-i"],
   "terminal.integrated.shell.osx": "/bin/bash",
-  "terminal.integrated.shellArgs.osx": ["--init-file", "c:/esp/esp-idf/export.sh", "-i"],
+  "terminal.integrated.shellArgs.osx": ["--init-file", "C:/esp/esp-idf/export.sh", "-i"],
   "files.associations": {
     "*.md": "markdown",
     "*.mdx": "tdx",
     "stdio.h": "c",
     "freertos.h": "c",
-    "freertosconfig.h": "c"
+    "gpio.h": "c",
+    "task.h": "c"
   },
   "idf.adapterTargetName": "esp32"
 }

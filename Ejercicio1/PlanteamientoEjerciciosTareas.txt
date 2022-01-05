@@ -1,2 +1,2 @@
-Tienes que diseñar el control de tareas de un dispensador de insulina, para
-que se puedan ejecutar de manera correcta el llenado y suministro del medicamento.
+Tienes que diseñar dos tareas, una de llenado y otra de suministro de 
+medicamento para un dispensador de insulina.

@@ -7,35 +7,35 @@ xQueueHandle queue;
 
 static const uint8_t queue_len = 5;
 
-void listenForHTTP(void *params)
+void listenForHTTP(void *params)//SendTask Tarea Escritora
 {
   int count = 0;
-  while (true)
+  while (1)
   {
     count++;
-    printf("received http message\n");
+    printf("\n-----Sending  message------\n");
     
     if(xQueueSend(queue, (void *)&count, 10 / portTICK_PERIOD_MS)) 
     {
-      printf("added message to queue\n");      
+      printf("--> Send message to queue\n");      
     } 
     else 
     {            
-      printf("Queue Full\n");      
+      printf("****** Queue Ful l!!! ******\n");      
     }
 
-    vTaskDelay(500 / portTICK_PERIOD_MS); //cambiar a 500 para llenarla
+    vTaskDelay(1000 / portTICK_PERIOD_MS); //cambiar a 500 para llenarla
   }
 }
 
-void task1(void *params)
+void task1(void *params) //Receive Tarea lectora
 {
   while (true)
   { 
     int rxInt;
     if(xQueueReceive(queue, (void *)&rxInt , 0/*5000 / portTICK_PERIOD_MS*/))
     {
-      printf("doing something with http %d\n", rxInt);
+      printf("--> Reading message %d\n", rxInt);
     }
     vTaskDelay(1000 / portTICK_PERIOD_MS);
   }
@@ -43,7 +43,7 @@ void task1(void *params)
 
 /*void Observ(void *params){
   int obs;
-  if(xQueuePeek(queue))
+  if(xQueuePeek(queue, ))
 }*/
 
 void app_main(void)

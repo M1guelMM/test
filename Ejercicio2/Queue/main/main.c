@@ -21,7 +21,7 @@ void listenForHTTP(void *params)//SendTask Tarea Escritora
     } 
     else 
     {            
-      printf("****** Queue Ful l!!! ******\n");      
+      printf("****** Queue Full!!! ******\n");      
     }
 
     vTaskDelay(1000 / portTICK_PERIOD_MS); //cambiar a 500 para llenarla

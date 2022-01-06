@@ -10,37 +10,35 @@
  
  void incTask(void *parameters){
 
-
    int local_var;
    int num = 0;
    while(1){
 
-     if(xSemaphoreTake(mutex,0/*tiempo que espera para tomar el mutex*/) == pdTRUE){
+     //if(xSemaphoreTake(mutex,0/*tiempo que espera para tomar el mutex*/) == pdTRUE){
        local_var = share_var;
        local_var++;
        //critical section
         if(num == 1 ){
+          num++;          
           vTaskDelay(500 / portTICK_PERIOD_MS);
         }
         else{
-          num++;
+          num++;          
           vTaskDelay(200 / portTICK_PERIOD_MS);
-          if(num == 5){
+          if(num == 5){            
             vTaskDelay(700 / portTICK_PERIOD_MS);
             num = 0;
           }
-
         }
         share_var = local_var;
         printf("%d\n",share_var);
 
      //give mutex after critical section
-     xSemaphoreGive(mutex);
+     //xSemaphoreGive(mutex);
 
-     }else{
+     //}else{
        //Do something else
-     }
-     
+    // }
      
 
    }
@@ -58,19 +56,18 @@ void app_main(void)
 
   mutex = xSemaphoreCreateMutex();
 
-
   xTaskCreate(incTask,
-  "Increment Task 1",
-  2048,
-  NULL,
-  1,
-  NULL);
+              "Increment Task 1",
+              2048,
+              NULL,
+              1,
+              NULL);
   
   xTaskCreate(incTask,
-  "Increment Task 2",
-  2048,
-  NULL,
-  1,
-  NULL);
+              "Increment Task 2",
+              2048,
+              NULL,
+              1,
+              NULL);
   vTaskDelete(NULL);
 }
